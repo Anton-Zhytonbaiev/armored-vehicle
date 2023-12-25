@@ -35,6 +35,7 @@ export default {
   height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
+  background-color: #f8f9fa;
 }
 
 .title_container {
