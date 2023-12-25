@@ -1,24 +1,22 @@
-# armored-vehicle
+# Armored vehicle
 
-## Project setup
-```
-npm install
-```
+## About project
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This is a small project that is a page for a manufacturer of armored vehicles. The goal of the project was to demonstrate the ability to use such technologies as Vue, Vue Router, i18n. Also, the page was executed without a design, so there may be some inaccuracies in UX and UI.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Terminal commands
 
-### Lints and fixes files
-```
-npm run lint
-```
+- ```npm install``` - Project setup
+- ```npm run serve``` - Compiles and hot-reloads for development
+- ```npm run build``` - Compiles and minifies for production
+- ```npm run lint``` - Lints and fixes files
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Technologies
+
+- Vue
+- Vue-router
+- i18n
+
+## Troubleshooting
+
+For any contributing or problem solving you could find me [here](https://t.me/Anton_Zhytonbaiev) and [here](https://www.linkedin.com/in/anton-zhytonbaiev-2b0070266/?locale=uk_UA)
