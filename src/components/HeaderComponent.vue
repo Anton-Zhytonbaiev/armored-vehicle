@@ -5,10 +5,20 @@
       <h1 class="name">Zodiac Engineering</h1>
     </div>
     <div class="nav">
-      <a v-if="!isHomePage" href="./" class="nav_link">Home</a>
-      <a href="./gallery" class="nav_link">Gallery</a>
-      <a href="./projects" class="nav_link">Projects</a>
-      <a href="./contacts" class="nav_link">Contacts</a>
+      <a v-if="!isHomePage" href="./" class="nav_link">{{ $t('nav.home') }}</a>
+      <a href="./gallery" class="nav_link">{{ $t('nav.gallery') }}</a>
+      <a href="./projects" class="nav_link">{{ $t('nav.projects') }}</a>
+      <a href="./contacts" class="nav_link">{{ $t('nav.contacts') }}</a>
+      <div class="selector">
+        <div class="selector_lang" @click="toggleDropdown">
+          <img class="selector_icon" src="../assets/lang.png" alt="lang">
+          {{ language.toUpperCase() }}
+        </div>
+        <div v-if="dropdownOpen" class="selector_options">
+          <p class="options" @click="changeLanguage('en')">EN</p>
+          <p class="options" @click="changeLanguage('ua')">UA</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -16,10 +26,24 @@
 <script>
 export default {
   name: 'HeaderComponent',
-
+  data() {
+    return {
+      language: localStorage.getItem('selectedLanguage') || 'en',
+      dropdownOpen: false,
+    };
+  },
   methods: {
     navigateToHome() {
       this.$router.push('/');
+    },
+    toggleDropdown() {
+      this.dropdownOpen = !this.dropdownOpen;
+    },
+    changeLanguage(locale) {
+      this.dropdownOpen = false;
+      localStorage.setItem('selectedLanguage', locale);
+      this.language = locale;
+      this.$i18n.locale = locale;
     },
   },
   computed: {
@@ -78,7 +102,41 @@ export default {
 }
 
 .nav_link:hover {
-  color: #1e4057; 
+  color: #1e4057;
   transform: translateY(1px);
+}
+
+.selector {
+  position: relative
+}
+
+.selector_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.selector_lang {
+  display: flex;
+  justify-content: center;
+}
+
+.selector_lang:hover {
+  cursor: pointer;
+  color: #1e4057;
+}
+
+.selector_options {
+  position: absolute;
+  top: 25px;
+  right: -10px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 60px;
+  background-color: #aaa;
 }
 </style>
