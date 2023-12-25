@@ -1,4 +1,5 @@
 <template>
+  <Hero />
   <About />
   <Brochure />
   <Partners />
@@ -10,6 +11,7 @@ import About from '../components/AboutComponent.vue'
 import Footer from '../components/FooterComponent.vue'
 import Partners from '../components/PartnersComponent.vue'
 import Brochure from '../components/BrochureComponent.vue'
+import Hero from '../components/HeroComponent.vue'
 
 export default {
   name: 'HomePage',
@@ -17,7 +19,8 @@ export default {
     About,
     Footer,
     Partners,
-    Brochure
+    Brochure,
+    Hero
   }
 }
 </script>

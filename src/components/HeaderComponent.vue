@@ -2,21 +2,35 @@
   <div class="header_container">
     <div class="logo_container" @click="navigateToHome">
       <img src="../assets/logo.png" class="logo" alt="logo">
-      <h1 class="name">Zodiac Engineering</h1>
+      <h1 class="name">
+        Zodiac Engineering
+      </h1>
     </div>
     <div class="nav">
-      <a v-if="!isHomePage" href="./" class="nav_link">{{ $t('nav.home') }}</a>
-      <a href="./gallery" class="nav_link">{{ $t('nav.gallery') }}</a>
-      <a href="./projects" class="nav_link">{{ $t('nav.projects') }}</a>
-      <a href="./contacts" class="nav_link">{{ $t('nav.contacts') }}</a>
+      <a v-if="!isHomePage" href="./" class="nav_link">
+        {{ $t('nav.home') }}
+      </a>
+      <a href="./gallery" class="nav_link"
+        >{{ $t('nav.gallery') }}
+      </a>
+      <a href="./projects" class="nav_link">
+        {{ $t('nav.projects') }}
+      </a>
+      <a href="./contacts" class="nav_link">
+        {{ $t('nav.contacts') }}
+      </a>
       <div class="selector">
         <div class="selector_lang" @click="toggleDropdown">
           <img class="selector_icon" src="../assets/lang.png" alt="lang">
           {{ language.toUpperCase() }}
         </div>
         <div v-if="dropdownOpen" class="selector_options">
-          <p class="options" @click="changeLanguage('en')">EN</p>
-          <p class="options" @click="changeLanguage('ua')">UA</p>
+          <p class="options" @click="changeLanguage('en')">
+            EN
+          </p>
+          <p class="options" @click="changeLanguage('ua')">
+            UA
+          </p>
         </div>
       </div>
     </div>
