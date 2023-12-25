@@ -29,6 +29,15 @@
         </div>
       </div>
       <div class="vert_line"></div>
+      <div>
+        <p class="map_text">
+          You can find our offices in the USA, Great Britain and Ukraine.
+        </p>
+
+        <p class="map_text">
+          Also, if you want to develop similar production in your country, we will be happy to discuss all the details with you.
+        </p>
+      </div>
       <div class="map_container">
         <img class="map" src="https://inkasarmored.com/wp-content/uploads/map.png" alt="map">
         <img class="map_dot1" src="../assets/address2.svg" alt="dot" title="Ukraine">
@@ -87,7 +96,7 @@ export default {
 .contacts_container {
   margin: 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .contacts {
@@ -105,6 +114,14 @@ export default {
   color: #fcfcfc;
   font-size: 16px;
   margin-left: 10px;
+}
+
+.map_text {
+  color: #fcfcfc;
+  font-size: 14px;
+  margin-left: 10px;
+  max-width: 200px;
+  margin-bottom: 20px;
 }
 
 .map_container {
