@@ -1,5 +1,4 @@
 <template>
-  <Header />
   <About />
   <Partners />
   <Video />
@@ -7,7 +6,6 @@
 </template>
 
 <script>
-import Header from '../components/HeaderComponent.vue'
 import About from '../components/AboutComponent.vue'
 import Footer from '../components/FooterComponent.vue'
 import Partners from '../components/PartnersComponent.vue'
@@ -17,7 +15,6 @@ export default {
   name: 'HomePage',
   components: {
     About,
-    Header,
     Footer,
     Partners,
     Video
