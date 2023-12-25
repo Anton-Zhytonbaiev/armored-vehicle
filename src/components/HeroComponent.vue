@@ -72,6 +72,7 @@ export default {
   border-radius: 4px;
   cursor: pointer;
   color: #f8f9fa;
+  transition: background-color 0.3s ease;
 }
 
 .button_gallery {
@@ -83,6 +84,7 @@ export default {
   border-radius: 4px;
   cursor: pointer;
   color: #f8f9fa;
+  transition: background-color 0.3s ease;
 }
 
 .button_more:hover {
