@@ -1,7 +1,7 @@
 <template>
   <About />
+  <Brochure />
   <Partners />
-  <Video />
   <Footer />
 </template>
 
@@ -9,7 +9,7 @@
 import About from '../components/AboutComponent.vue'
 import Footer from '../components/FooterComponent.vue'
 import Partners from '../components/PartnersComponent.vue'
-import Video from '../components/VideoComponent.vue'
+import Brochure from '../components/BrochureComponent.vue'
 
 export default {
   name: 'HomePage',
@@ -17,7 +17,7 @@ export default {
     About,
     Footer,
     Partners,
-    Video
+    Brochure
   }
 }
 </script>

@@ -34,7 +34,6 @@ export default {
   align-items: center;
   padding: 50px;
   justify-content: space-between;
-
 }
 
 .about_desc {
