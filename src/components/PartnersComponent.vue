@@ -1,7 +1,9 @@
 <template>
   <div class="partners_container">
     <div class="title_container">
-      <h1 class="title">Our Partners</h1>
+      <h1 class="title">
+        {{ $t('home.partners.title') }}
+      </h1>
     </div>
     <div class="scroll_wrapper">
       <div class="logos_container">

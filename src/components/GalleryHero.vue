@@ -2,10 +2,10 @@
   <div class="hero_container">
     <div class="hero">
       <h1 class="title">
-        GALLERY
+        {{ $t('gallery.title') }}
       </h1>
       <h3 class="text">
-        See what our team has been working on!
+        {{ $t('gallery.text') }}
       </h3>
     </div>
   </div>

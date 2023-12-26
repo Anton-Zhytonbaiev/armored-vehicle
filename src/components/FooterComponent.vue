@@ -31,11 +31,11 @@
       <div class="vert_line"></div>
       <div>
         <p class="map_text">
-          You can find our offices in the USA, Great Britain and Ukraine.
+          {{ $t('home.footer.text1') }}
         </p>
 
         <p class="map_text">
-          Also, if you want to develop similar production in your country, we will be happy to discuss all the details with you.
+          {{ $t('home.footer.text2') }}
         </p>
       </div>
       <div class="map_container">

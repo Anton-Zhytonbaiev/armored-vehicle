@@ -1,22 +1,10 @@
 import { createI18n } from 'vue-i18n';
+import enTranslations from './locales/en.js';
+import uaTranslations from './locales/ua.js';
 
 const messages = {
-  en: {
-    nav: {
-      home: 'Home',
-      gallery: 'Gallery',
-      projects: 'Projects',
-      contacts: 'Contacts'
-    }
-  },
-  ua: {
-    nav: {
-      home: 'Головна',
-      gallery: 'Галерея',
-      projects: 'Проекти',
-      contacts: 'Контакти'
-    }
-  }
+  en: enTranslations,
+  ua: uaTranslations,
 };
 
 const i18n = createI18n({

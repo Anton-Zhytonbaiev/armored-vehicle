@@ -5,10 +5,10 @@
     </div>
     <div class="brochure_desc">
       <h2 class="title">
-        Please take a look at our brochure!
+        {{ $t('home.brochure.title') }}
       </h2>
       <p class="text">
-        If you want to learn more about our company, our products and services, take a look at the brochure provided. It is available below in English.
+        {{ $t('home.brochure.text') }}
       </p>
       <a class="pdf_link" href="https://www.dropbox.com/s/zwb3szsv3kssuej/Full%20April2021%20%281%29.pdf?dl=0">
         PDF File
