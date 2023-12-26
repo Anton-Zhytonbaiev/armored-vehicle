@@ -137,6 +137,7 @@ input:focus {
 .submit_button {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 70px;
   height: 50px;
   padding: 0 30px;
