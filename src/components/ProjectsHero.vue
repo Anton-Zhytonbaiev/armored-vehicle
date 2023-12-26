@@ -2,29 +2,33 @@
   <div class="hero_container">
     <div class="hero">
       <h1 class="title">
-        GALLERY
+        OUR WORK
       </h1>
       <h3 class="text">
-        See what our team has been working on!
+        Check out the work that we do!
       </h3>
+      <a class="button_more-wrapper" href="#about">
+        <div class="button_more">See More</div>
+      </a>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'GalleryHero',
+  name: 'ProjectsHero',
 }
 </script>
 
 <style scoped>
 .hero_container {
   height: calc(100vh - 70px);
-  background: url('../assets/galleryHero.webp');
+  background: url('../assets/projectsHero.webp');
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .hero_container::before {
@@ -42,20 +46,42 @@ export default {
   margin-left: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   z-index: 2;
+  text-align: center;
 }
 
 .title {
   color: #b8b5b2;
-  font-size: 86px;
+  font-size: 110px;
   letter-spacing: 10px;
   font-weight: lighter;
 }
 
 .text {
   color: #b8b5b2;
-  font-size: 30px;
+  font-size: 28px;
   letter-spacing: 2px;
   font-weight: lighter;
+  margin-top: 0;
 }
+
+.button_more-wrapper {
+  text-decoration: none;
+}
+
+.button_more {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 30px;
+  margin-right: 10px;
+  background-color: #1e4057;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+
 </style>
