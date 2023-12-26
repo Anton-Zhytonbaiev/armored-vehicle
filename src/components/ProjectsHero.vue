@@ -7,7 +7,7 @@
       <h3 class="text">
         {{ $t('projects.hero.text') }}
       </h3>
-      <a class="button_more-wrapper" href="#about">
+      <a class="button_more-wrapper" href="#offer">
         <div class="button_more">
           {{ $t('projects.hero.button') }}
         </div>
