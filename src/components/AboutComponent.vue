@@ -1,15 +1,15 @@
 <template>
   <div class="about_container" id="about">
     <div class="about_desc">
-      <h2 class="title">About Us</h2>
+      <h2 class="title">{{ $t('home.about.title') }}</h2>
       <p class="text">
-        Zodiac Engineering is a manufacturer of various types of special armored vehicles. We supply our products all over the world. To government agencies, private security companies, and individuals. 
+        {{ $t('home.about.text1') }}
       </p>
       <p class="text">
-        Zodiac Engineering armored vehicles range includes SUVs, cash-in-transit vehicles, and armored personnel carriers for cargo transportation and delivery of quick response teams to destinations.
+        {{ $t('home.about.text2') }}
       </p>
       <p class="text">
-        Our competitive advantage is in individual approach to each client and guarantee of our specialists in timely and high-quality execution of orders. Representatives of our company are ready to provide more detailed information on the production and answer all your questions.
+        {{ $t('home.about.text3') }}
       </p>
     </div>
     <div class="about_video">

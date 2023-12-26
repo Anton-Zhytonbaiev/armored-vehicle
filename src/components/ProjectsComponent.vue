@@ -1,25 +1,25 @@
 <template>
   <div class="projects_container">
     <h1 class="title">
-      What we offer:
+      {{ $t('projects.subtitle') }}
     </h1>
     <div class="features">
       <div class="photo"></div>
       <div class="description">
         <h2 class="description_title">
-          Cash In Transit
+          {{ $t('projects.features1.title') }}
         </h2>
         <p class="description_text">
-          The team of our qualified engineers is able to offer various modifications of widely known transport models, as well as to develop a new model according to the order taking specific technical tasks into account.
+          {{ $t('projects.features1.text') }}
         </p>
         <h3 class="list_title">
-          Models Available:
+          {{ $t('projects.features1.listTitle') }}
         </h3>
         <ul>
-          <li>Ford 650</li>
-          <li>International 4300</li>
-          <li>Kenworth 230, 330</li>
-          <li>Mercedes Actros</li>
+          <li>{{ $t('projects.features1.listItem1') }}</li>
+          <li>{{ $t('projects.features1.listItem2') }}</li>
+          <li>{{ $t('projects.features1.listItem3') }}</li>
+          <li>{{ $t('projects.features1.listItem4') }}</li>
         </ul>
       </div>
     </div>
@@ -27,10 +27,10 @@
       <div class="photo photo_features2"></div>
       <div class="description">
         <h2 class="description_title">
-          Armored Personnel Carriers
+          {{ $t('projects.features2.title') }}
         </h2>
         <p class="description_text">
-          We manufacture a multi-purpose off road vehicle intended for use as a method of transportation and an operational vehicle during counter-terrorist operations, carrying out territorial defense tasks, including personal transportation during march. The car is build taking the need to protect the crew from firearms and the damaging factors of explosive devices into account.
+          {{ $t('projects.features2.text') }}
         </p>
       </div>
     </div>
@@ -38,19 +38,19 @@
       <div class="photo photo_features3"></div>
       <div class="description">
         <h2 class="description_title">
-          Minibuses/Vans
+          {{ $t('projects.features3.title') }}
         </h2>
         <p class="description_text">
-          The armored minibus/van based on Ford Transit by Zodiac Engineering was developed primarily for the transport of valuable goods. This vehicle is an excellent solution for safe movement of a group of collectors with cargo. The protection of the minibus reaches the level of EN1063 BR7/NIL IV.
+          {{ $t('projects.features3.text') }}
         </p>
         <h3 class="list_title">
-          Models Available:
+          {{ $t('projects.features3.listTitle') }}
         </h3>
         <ul>
-          <li>Ford Transit</li>
-          <li>GMC Savana</li>
-          <li>Mercedes Sprinter</li>
-          <li>RAM ProMaster and other</li>
+          <li>{{ $t('projects.features3.listItem1') }}</li>
+          <li>{{ $t('projects.features3.listItem2') }}</li>
+          <li>{{ $t('projects.features3.listItem3') }}</li>
+          <li>{{ $t('projects.features3.listItem4') }}</li>
         </ul>
       </div>
     </div>
@@ -58,10 +58,10 @@
       <div class="photo photo_features4"></div>
       <div class="description">
         <h2 class="description_title">
-          SUVs
+          {{ $t('projects.features4.title') }}
         </h2>
         <p class="description_text">
-          Invisibility in the flow of traffic, ability to mimic the environment is not the only advantage of hidden capsule armoring technology. The steel capsule under the car’s casing from Zodiac Engineering will protect not only from bullets and grenades, but also in road accidents. The reinforced suspension and the armored module inside serve as a solid skeleton of the entire vehicle structure, giving it additional rigidity and strength.
+          {{ $t('projects.features4.text') }}
         </p>
       </div>
     </div>

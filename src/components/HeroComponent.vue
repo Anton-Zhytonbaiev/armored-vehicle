@@ -9,10 +9,10 @@
       </h3>
       <div class="buttons_group">
         <a class="button_more-wrapper" href="#about">
-          <div class="button_more">Learn More</div>
+          <div class="button_more">{{ $t('home.hero.more') }}</div>
         </a>
         <div class="button_gallery" @click="this.$router.push('/gallery')">
-          Our latest project
+          {{ $t('home.hero.latest') }}
         </div>
       </div>
     </div>

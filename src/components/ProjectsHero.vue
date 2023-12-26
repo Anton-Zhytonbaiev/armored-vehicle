@@ -2,13 +2,15 @@
   <div class="hero_container">
     <div class="hero">
       <h1 class="title">
-        OUR WORK
+        {{ $t('projects.hero.title') }}
       </h1>
       <h3 class="text">
-        Check out the work that we do!
+        {{ $t('projects.hero.text') }}
       </h3>
       <a class="button_more-wrapper" href="#about">
-        <div class="button_more">See More</div>
+        <div class="button_more">
+          {{ $t('projects.hero.button') }}
+        </div>
       </a>
     </div>
   </div>
